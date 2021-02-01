@@ -3,15 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9588748D25C82612001EB3F2 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 9588748C25C82612001EB3F2 /* ViewInspector */; };
 		95A7FDC425C822DF005AF4B1 /* ViewInspectorInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7FDC325C822DF005AF4B1 /* ViewInspectorInSwiftUIApp.swift */; };
 		95A7FDC625C822DF005AF4B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7FDC525C822DF005AF4B1 /* ContentView.swift */; };
 		95A7FDC825C822E0005AF4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A7FDC725C822E0005AF4B1 /* Assets.xcassets */; };
 		95A7FDCB25C822E0005AF4B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A7FDCA25C822E0005AF4B1 /* Preview Assets.xcassets */; };
+		95A7FDDE25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7FDDD25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95A7FDE025C823D2005AF4B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95A7FDB825C822DF005AF4B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95A7FDBF25C822DF005AF4B1;
+			remoteInfo = ViewInspectorInSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		95A7FDC025C822DF005AF4B1 /* ViewInspectorInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewInspectorInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +32,9 @@
 		95A7FDC725C822E0005AF4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A7FDCA25C822E0005AF4B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95A7FDCC25C822E0005AF4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A7FDDB25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewInspectorInSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A7FDDD25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInspectorInSwiftUITests.swift; sourceTree = "<group>"; };
+		95A7FDDF25C823D2005AF4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +45,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95A7FDD825C823D2005AF4B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9588748D25C82612001EB3F2 /* ViewInspector in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				95A7FDC225C822DF005AF4B1 /* ViewInspectorInSwiftUI */,
+				95A7FDDC25C823D2005AF4B1 /* ViewInspectorInSwiftUITests */,
 				95A7FDC125C822DF005AF4B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				95A7FDC025C822DF005AF4B1 /* ViewInspectorInSwiftUI.app */,
+				95A7FDDB25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +94,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		95A7FDDC25C823D2005AF4B1 /* ViewInspectorInSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95A7FDDD25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.swift */,
+				95A7FDDF25C823D2005AF4B1 /* Info.plist */,
+			);
+			path = ViewInspectorInSwiftUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +119,32 @@
 			dependencies = (
 			);
 			name = ViewInspectorInSwiftUI;
+			packageProductDependencies = (
+			);
 			productName = ViewInspectorInSwiftUI;
 			productReference = 95A7FDC025C822DF005AF4B1 /* ViewInspectorInSwiftUI.app */;
 			productType = "com.apple.product-type.application";
+		};
+		95A7FDDA25C823D2005AF4B1 /* ViewInspectorInSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A7FDE225C823D2005AF4B1 /* Build configuration list for PBXNativeTarget "ViewInspectorInSwiftUITests" */;
+			buildPhases = (
+				95A7FDD725C823D2005AF4B1 /* Sources */,
+				95A7FDD825C823D2005AF4B1 /* Frameworks */,
+				95A7FDD925C823D2005AF4B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95A7FDE125C823D2005AF4B1 /* PBXTargetDependency */,
+			);
+			name = ViewInspectorInSwiftUITests;
+			packageProductDependencies = (
+				9588748C25C82612001EB3F2 /* ViewInspector */,
+			);
+			productName = ViewInspectorInSwiftUITests;
+			productReference = 95A7FDDB25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +158,10 @@
 					95A7FDBF25C822DF005AF4B1 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					95A7FDDA25C823D2005AF4B1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 95A7FDBF25C822DF005AF4B1;
+					};
 				};
 			};
 			buildConfigurationList = 95A7FDBB25C822DF005AF4B1 /* Build configuration list for PBXProject "ViewInspectorInSwiftUI" */;
@@ -112,11 +173,15 @@
 				Base,
 			);
 			mainGroup = 95A7FDB725C822DF005AF4B1;
+			packageReferences = (
+				9588748B25C82612001EB3F2 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 95A7FDC125C822DF005AF4B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				95A7FDBF25C822DF005AF4B1 /* ViewInspectorInSwiftUI */,
+				95A7FDDA25C823D2005AF4B1 /* ViewInspectorInSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +193,13 @@
 			files = (
 				95A7FDCB25C822E0005AF4B1 /* Preview Assets.xcassets in Resources */,
 				95A7FDC825C822E0005AF4B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A7FDD925C823D2005AF4B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +215,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95A7FDD725C823D2005AF4B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A7FDDE25C823D2005AF4B1 /* ViewInspectorInSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95A7FDE125C823D2005AF4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95A7FDBF25C822DF005AF4B1 /* ViewInspectorInSwiftUI */;
+			targetProxy = 95A7FDE025C823D2005AF4B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		95A7FDCD25C822E0005AF4B1 /* Debug */ = {
@@ -306,6 +394,46 @@
 			};
 			name = Release;
 		};
+		95A7FDE325C823D2005AF4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = ViewInspectorInSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.ViewInspectorInSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewInspectorInSwiftUI.app/ViewInspectorInSwiftUI";
+			};
+			name = Debug;
+		};
+		95A7FDE425C823D2005AF4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = ViewInspectorInSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.ViewInspectorInSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewInspectorInSwiftUI.app/ViewInspectorInSwiftUI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,7 +455,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		95A7FDE225C823D2005AF4B1 /* Build configuration list for PBXNativeTarget "ViewInspectorInSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A7FDE325C823D2005AF4B1 /* Debug */,
+				95A7FDE425C823D2005AF4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9588748B25C82612001EB3F2 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9588748C25C82612001EB3F2 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9588748B25C82612001EB3F2 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95A7FDB825C822DF005AF4B1 /* Project object */;
 }
